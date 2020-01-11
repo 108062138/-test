@@ -24,7 +24,29 @@ p.mix {border-style: dotted dashed solid double;}
 h1.outset{border-style: outset;border-left: 6px solid white;}
 
 div{border: groove;margin: 25px;background-color: transparent;}
+
 div:hover{background-color: linen;}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
 
 body
 {
@@ -41,7 +63,7 @@ body {
 
 /* Style the header */
 .header {
-  background-color: #f1f1f1;
+  background-color:transparent;
   padding: 20px;
   text-align: center;
 }
@@ -88,26 +110,47 @@ body {
     width: 100%;
   }
 }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
 </style>
 
 <head>
 <meta http-equiv="Content-Type" content="text/html";charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.facebook.com/profile.php?id=100005348475783">
 <title>吳泊諭Po-Yu,Wu's first website</title>
 </head>
 
 <body>
 
 <div id="linkweb"></div>
+<p>>>latest upload 2020/1/12.This background was taken in Kansas State University around 2016 by David Wu.</p>
+<p>>>I am grateful for the help of W3SCHOOL and the other websites that help me finish this project.</p>
 <script>setInterval("linkweb.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);
 </script>
 
 <div class="header">
     <h1>吳。泊諭</h1>
-    <p>再搞甚麼?沒有打中?</p>
+    <h1>子彈沒打著?</h1>
     <br>
-    <p>讓子彈飛，一會兒</p>
+    <IMG SRC="letthebulletfly.jpg" style="border: 2p#ccc solid;padding: 10px;" width="1100px">
 </div>
 
 <div class="row">
@@ -148,11 +191,11 @@ body {
 </div>
 
 <h1 style="font-family: fantasy;" class="outset">1:self introduction </h1>
-<p title="風聲太大，聽不清楚">My name is Po-yu, Wu,吳泊諭.<br>A freshment in NTHU,currently majoring in computer science.</p>
+<div title="風聲太大，聽不清楚">我叫吳泊諭，是個大一.<br>讀清大</div>
 <hr>
 
 <h1 style="font-family: fantasy;" class="outset">2:my current state</h1>
-<div>Right now, I am facing some troubles. I get two final projects to finish,whose deadline are 1/13 and 1/15 respectively<br>I hope I can finish them on time.<br>I love tabletennis! KEEP GOING LIN YUN-JU!</div>    
+<div>要死了啦，我她媽還有一個allegro要怎麼版啦<br>PEACE.<br>林勻儒加油，劍指2020東京奧運</div>    
 <br>
 <hr>
 
@@ -161,8 +204,8 @@ body {
 <div class="topnav">
     <p><b><a href="https://www.nthu.edu.tw/">清大官網</a></b></p>
     <p><b><a href="https://acm.cs.nthu.edu.tw/">清大OJ</a></b></p>
-    <p><b><a href="https://www.w3schools.com/">超。網★站★救★星  W3_SCHOOL/a></b></p>
-    <p><b><a href="https://stackoverflow.com/">超。打★扣★救★星<  STACK_OVERE_FLOW/<a></b></p>
+    <p><b><a href="https://www.w3schools.com/">超。網★站★救★星  W3_SCHOOL</a></b></p>
+    <p><b><a href="https://stackoverflow.com/">超。打★扣★救★星<  STACK_OVERE_FLOW<a></b></p>
 </div>
 <br>
 
@@ -178,30 +221,77 @@ body {
 
 <h1 style="font-family: fantasy;" class="outset">4:recommand animation</h1>
 <div>青少年熱血動畫</div>
-<p>>>>乒乓、天元突破、棒球大聯盟、賭博末世錄</p>
+<p>>>乒乓、天元突破、棒球大聯盟、賭博末世錄</p>
 <br>
 <div>青春戀愛物語</div>
-<p>>>>櫻花莊、青春豬頭、輝夜姬、學不來、五等分、不起眼</p>
+<p>>>櫻花莊、青春豬頭、輝夜姬、學不來、五等分、不起眼</p>
 <br>
 <div>ㄎ一ㄤ番</div>
-<p>>>>黃金神威、遊戲三人娘、碧藍之海、非洲動物上班族</p>
+<p>>>黃金神威、遊戲三人娘、碧藍之海、非洲動物上班族</p>
 <br>
 <div>好看但我還沒追的番</div>
-<p>>>>BEASTAR</p>
+<p>>>BEASTAR</p>
 <br>
 
-<hr>
+<div class="gallery">
+  <a target="_blank" href="kong_wen_ger.jpg">
+    <img src="kong_wen_ger.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">想家啦，文革?</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="kaise.jpg">
+    <img src="kaise.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">給開司一罐啤酒</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="passerby.jpg">
+    <img src="passerby.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">倫也君，妳也為女生著想一下啊。真是的，哼!</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="golden.jpg">
+    <img src="golden.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">BOKI BOKI BOKI BOKI</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="sakura.jpg">
+    <img src="sakura.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">空太，有小動物跑到我的身上了啦。空太，空太，你有聽到嗎?</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="cantlearn.jpg">
+    <img src="cantlearn.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">我絕對沒有喜歡上朋友喜歡上的人的。為了朋友，恩，我要為了朋友...</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="dark.jpg".jpg">
+    <img src="dark.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">輸了啦~~~</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="darker".jpg">
+    <img src="darker.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">他愛我，他不愛我，他愛我，他不愛我，他愛我，他，他...算了</div>
+</div>
+
 <h1 style="font-family: fantasy;" class="outset">5:++++++++++ area</h1>
 <div style="font-size: 17px;">>>>LOL:0o幻滅的傳說o0，威扣資main，歡迎交流</div>
-<p>about to fill in</p>
+<p>>>近期中路妖魔鬼怪太多了，讓威寇茲要搬到下路去了。然而近期隨著輔助裝回魔機制的回歸，近日筆者正在嘗試不出爐燈回音的輔助打法。</p>
 <div style="font-size: 17px;">>>>怪物彈珠:870,144,866，隊長常駐剛格尼爾阿法、會長，徵加里棒好友</div>
-<p>about to fill in</p>
+<p>>>新春大暴死，30抽沒中限定，要吃土啦(該不會是聖誕節抽到剛格a了八OAO)</p>
 <br>
 <hr>
 <h1 style="font-family: fantasy;" class="outset">6:my side project</h1>
 <div title="你以為我會在這裡藏梗?">我的 allegro 糞遊</div>
-
-<img src="mysibilings.jpg" alt="gg3be0" width="450" height="350">
-
+<p>待補上................</p>
+<a href="#" class="fa fa-facebook"></a>
 </body>
 </html>
