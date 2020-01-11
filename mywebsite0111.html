@@ -99,18 +99,6 @@ body {
 
 <body>
 
-<div id="list"></div>
-<script>
-let list=document.getElementById("list");
-list.innerHTML="...load中...";
-let src="https://poyuwu17.github.io/-test/mywebsite0111.html";
-fetch(src).then(function(responce){
-    return responce.text();
-}).then(function(result){
-    console.log("最後的資料",result);
-});
-</script>
-
 <div id="linkweb"></div>
 <script>setInterval("linkweb.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);
 </script>
