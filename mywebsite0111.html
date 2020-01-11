@@ -1,8 +1,219 @@
+<!DOCTYPE html>
+
 <html>
+
+<style>
+h1{max-width: 250px;text-align: center;}
+
+a:link{color: white;}
+a:visited{color: greenyellow;}
+a:hover{color: honeydew;}
+a:active{color: indigo;}
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+h1.outset{border-style: outset;border-left: 6px solid white;}
+
+div{border: groove;margin: 25px;background-color: transparent;}
+div:hover{background-color: linen;}
+
+body
+{
+    background-image: url("kansaschair.jpg");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+
 <head>
-<title>hello git my bro</title>
+<meta http-equiv="Content-Type" content="text/html";charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>吳泊諭Po-Yu,Wu's first website</title>
 </head>
+
 <body>
-hello git paggge
+
+<div id="list"></div>
+<script>
+let list=document.getElementById("list");
+list.innerHTML="...load中...";
+let src="https://poyuwu17.github.io/-test/mywebsite0111.html";
+fetch(src).then(function(responce){
+    return responce.text();
+}).then(function(result){
+    console.log("最後的資料",result);
+});
+</script>
+
+<div id="linkweb"></div>
+<script>setInterval("linkweb.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);
+</script>
+
+<div class="header">
+    <h1>吳。泊諭</h1>
+    <p>再搞甚麼?沒有打中?</p>
+    <br>
+    <p>讓子彈飛，一會兒</p>
+</div>
+
+<div class="row">
+    <div class="column">
+    <h2>2019-大一上</h2>
+    <p>我再清大的第一個學期結束了，資應應該爆掉了，我還有Allegro沒有寫，好想拿A+RRRRRRRRRRRRRR。回想這個學期，我的筆記沒有做足，看來要買一本筆記本惹。</p>
+    <p>再寒假的我，一定要練桌球~~~~~~</p>
+    </div>
+    
+    <div class="column">
+    <h2>2020-大一下</h2>
+    <p>大一下還沒開始</p>
+    </div>
+    <div class="column">
+    <h2>2020-大二上</h2>
+    <p>還沒開始</p>
+    </div>
+    <div class="column">
+      <h2>2021-大二下</h2>
+      <p>還沒開始</p>
+      </div>
+    <div class="column">
+      <h2>2021-大三上</h2>
+      <p>還沒開始</p>
+    </div>
+    <div class="column">
+      <h2>2022-大三下</h2>
+      <p>還沒開始</p>
+    </div>
+    <div class="column">
+      <h2>2022-大四上</h2>
+      <p>還沒開始</p>
+    </div>
+    <div class="column">
+      <h2>2023-大四下</h2>
+      <p>還沒開始</p>
+    </div>
+</div>
+
+<h1 style="font-family: fantasy;" class="outset">1:self introduction </h1>
+<p title="風聲太大，聽不清楚">My name is Po-yu, Wu,吳泊諭.<br>A freshment in NTHU,currently majoring in computer science.</p>
+<hr>
+
+<h1 style="font-family: fantasy;" class="outset">2:my current state</h1>
+<div>Right now, I am facing some troubles. I get two final projects to finish,whose deadline are 1/13 and 1/15 respectively<br>I hope I can finish them on time.<br>I love tabletennis! KEEP GOING LIN YUN-JU!</div>    
+<br>
+<hr>
+
+<h1 style="font-family: fantasy;" class="outset">3:recommanded sites</h1>
+<div title="讓子彈飛一會兒">糞啦，我就是要推這個，有夠實用</div>
+<div class="topnav">
+    <p><b><a href="https://www.nthu.edu.tw/">清大官網</a></b></p>
+    <p><b><a href="https://acm.cs.nthu.edu.tw/">清大OJ</a></b></p>
+    <p><b><a href="https://www.w3schools.com/">超。網★站★救★星  W3_SCHOOL/a></b></p>
+    <p><b><a href="https://stackoverflow.com/">超。打★扣★救★星<  STACK_OVERE_FLOW/<a></b></p>
+</div>
+<br>
+
+<div title="削球手再讓球呢">爽啦，就是愛浪費時間</div>
+<div class="topnav">
+    <p><b><a href="https://www.ptt.cc/cls/1">PTT</a></b></p>
+    <p><b><a href="https://ani.gamer.com.tw/">巴哈</a></b></p>
+    <p><b><a href="https://www.dcard.tw/f">低卡</a></b></p>
+</div>
+
+<br>
+<hr>
+
+<h1 style="font-family: fantasy;" class="outset">4:recommand animation</h1>
+<div>青少年熱血動畫</div>
+<p>乒乓、天元突破、棒球大聯盟、賭博末世錄</p>
+<br>
+<div>青春戀愛物語</div>
+<p>櫻花莊、青春豬頭、輝夜姬、學不來、五等分、不起眼</p>
+<br>
+<div>ㄎ一ㄤ番</div>
+<p>黃金神威、遊戲三人娘、碧藍之海、非洲動物上班族</p>
+<br>
+<div>好看但我還沒追的番</div>
+<p>BEASTAR</p>
+<br>
+
+<hr>
+<h1 style="font-family: fantasy;" class="outset">5:++++++++++ area</h1>
+<div style="font-size: 17px;">LOL:0o幻滅的傳說o0，威扣資main，歡迎交流</div>
+<p>about to fill in</p>
+<div style="font-size: 17px;">怪物彈珠:870,144,866，隊長常駐剛格尼爾阿法、會長，徵加里棒好友</div>
+<p>about to fill in</p>
+<br>
+<hr>
+<h1 style="font-family: fantasy;" class="outset">6:my side project</h1>
+<div title="你以為我會在這裡藏梗?">我的 allegro 糞遊</div>
+
+<img src="mysibilings.jpg" alt="gg3be0" width="450" height="350">
+
 </body>
 </html>
